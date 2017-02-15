@@ -1,603 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>MyWebsite</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/personnal.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
 
-    <title>个人主页</title>
-    <!--title image-->
-    <link rel="shortcut icon" type="text/css" href="img/favicon.ico"/>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Add custom CSS here -->
-    <link href="css/slidefolio.css" rel="stylesheet">
-	<!-- Font Awesome -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <style type="text/css">
-    	@media (min-width: 992px){
-				.col-md-4s {
-    			width: 40%;
-				}
-				.col-md-offset-4s {
-    			margin-left:32%;
-				}
-			}	
-    </style>
-  </head>
+</head>
 <body>
-		<audio style="display:none" controls id="audio"></audio>
-		<div class="andio">
-			<div class="pre"><div class="pre-img"></div></div>
-			<div class="stop"><div class="stop-img"></div></div>
-			<div class="next"><div class="next-img"></div></div>
-		</div>
-    <!-- Header Area -->
-    <div id="top" class="header">
-      <div class="vert-text">
-      	<div style="width:100%;background:red;position:relative;" class="text-center">
-        	<div class="yuan">
-   	      	<img  width='320px' style="opacity:0.7;"  class="img-rounded" alt="Company Logo" src="./img/1.jpg"/>
-        	</div>
-      	</div>
-        <h2 style="margin: 300px auto 0;" class="mengxiang">机会是给有准备的人的。</h2>
-		    <ul class="list-inline">
-          <li>我是房童童</li>
-          <li>前端工程师</li>
-          <li>爱技术，爱生活</li>
-      		<li><a href="tel:18734869369">18235101315</a></li>
-      		<li>fangtongtong1994@163.com</li>
-        </ul>	
-				<br>
-				<a href="#about" class="btn btn-top">Learn More</a>
-      </div>
+<div class="right" style="background-image:url(img/lunbo3.jpg)">
+    <div class="toggle_right">
     </div>
-    <!-- /Header Area -->
-	  <div id="nav">
-    <!-- Navigation -->
-    	<nav class="navbar navbar-new" role="navigation">
-   			<div class="container">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  				<div class="navbar-header">
-    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobilemenu">
-      				<span class="sr-only">Toggle navigation</span>
-     		 			<span class="icon-bar"></span>
-      				<span class="icon-bar"></span>
-      				<span class="icon-bar"></span>
-    				</button>
-						<a href="#" class="navbar-brand">房童童</a>
-  				</div>
-  				<div class="collapse navbar-collapse" id="mobilemenu">
-	  				<ul class="nav navbar-nav navbar-right text-center">
-	    				<li>
-	    					<a href="#top"><i class="service-icon fa fa-home"></i>&nbsp;Home</a>
-	    				</li>
-        			<li>
-        				<a href="#about"><i class="service-icon fa fa-info"></i>&nbsp;About</a>
-        			</li>
-        			<li>
-        				<a href="#services"><i class="service-icon fa fa-laptop"></i>&nbsp;Skill</a>
-        			</li>
-        			<li>
-        				<a href="#portfolio"><i class="service-icon fa fa-camera"></i>&nbsp;Experience</a>
-        			</li>
-        			<li>
-        				<a href="#contact"> <i class="service-icon fa fa-envelope"></i>&nbsp;Contact</a>
-        			</li>
-    				</ul>
-  				</div><!-- /.navbar-collapse -->
-  			</div>
-			</nav>
-    <!-- /Navigation -->
-		</div>	
-    <!-- About -->
-    <div id="about" class="about_us">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 text-center">
-            <h2 class="da-title"><span>About Me</span></h2>
-            <h4>关于我</h4>
-            <p class="lead">    本人能与同事协作，服从安排，能尽快适应新的环境及工作为人诚恳、有上进心、富有团队合作精神、沟通能力强，有良好的团队意识。具有较强观察能力，优良的沟通交际能力，能很快地融入新的工作中，能很好地面对工作压力，坚持不懈、求知欲强，乐于接受新的挑战。</p>
-          </div>
-        </div>
-	  	</div>
-    </div>   
-    <!-- Speciallities -->
-    <div id="services" class="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <h2 class="da-title"><span>My Skill</span></h2>
-            <h4>我的技能</h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 text-center">
-            <div class="service-item">
-              <i class="service-icon fa fa-camera-retro fa-3x"></i>
-              <h3>Web Layout</h3>
-              <p>less</p>
-              <p>html+css</p>
-              <p>html5+css3</p>
-              <p>&nbsp;</p>
-            </div>
-        </div>
-          <div class="col-md-4 text-center">
-            <div class="service-item">
-							<i class="service-icon fa fa-camera fa-3x"></i>
-              <h3>Dynamic Effect</h3>
-              <p>Javascript</p>
-              <p>jQuery</p>
-              <p>recat</p>
-              <p>angular</p>
-              <!-- <p>&nbsp;</p> -->
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="service-item">
-              <i class="service-icon fa fa-globe fa-3x"></i>
-              <h3>Data Contact</h3>
-              <p>php</p>
-              <p>node.js</p>
-              <p>ajax</p>
-              <p>mysql</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="right_cover">
+
     </div>
-    <!-- /Speciallities -->
-    <!-- Experience -->
-    <div id="portfolio" class="portfolio">
-    	<div class="container">
-    		<div class="row push50">
-      		<div class="col-md-4s col-md-offset-4s text-center">
-        		<h2 class="da-title"><span>Experience</span></h2>
-        		<h4>作品展示</h4>
-						<h3>
-							<span class="filter label label-default" data-filter="all">ALL</span>
-							<!--<span class="filter label label-default" data-filter="UIS">UI</span>-->
-							<span class="filter label label-default" data-filter="nature">App</span>
-							<span class="filter label label-default" data-filter="portraits">Sys</span>
-							<span class="filter label label-default" data-filter="bw">Other</span>
-						</h3>
-      			<hr>
-     			</div>
-    		</div>		
-				<div class="row">		
-					<div class="gallery">
-		     		<ul id="Grid" class="gcontainer">
-		          <!-- 1 -->
-		    		  <!-- <li class="col-md-4 col-sm-4 col-xs-12 mix portraits all" data-cat="graphics">
-		            <a href="#" data-toggle="modal"  class="mix-cover">
-		              <img class="horizontal" src="img/作品图片/newsys.jpg" alt="placeholder">
-		      		    <span class="overlay">
-		      		      <span class="valign"></span>
-		      		      <span class="title">Sys-news</span>
-		      		    </span>
-		            </a>                
-		      		  </li> -->
-		           <!--  2 -->
-		    		    <li class="col-md-4 col-sm-4 col-xs-12 mix nature all" data-cat="nature">
-		              <a href="http://fttworkapp.duapp.com/" data-toggle="modal"  class="mix-cover" target="_blank">
-		                <img class="horizontal" src="img/作品图片/workapp.jpg" alt="placeholder">
-		        		    <span class="overlay">
-		                  <span class="valign"></span>
-		                  <span class="title">App-work</span>
-		                </span>
-		              </a>                
-		      		  </li>
-		            <!-- 3 -->
-					      <li class="col-md-4 col-sm-4 col-xs-12 mix nature all" data-cat="nature">
-		              <a href="http://xinwenapp.duapp.com/" data-toggle="modal" class="mix-cover" target="_blank">
-		                <img class="horizontal" src="img/作品图片/news.jpg" alt="placeholder">
-		        		    <span class="overlay">
-		        		    	<span class="valign"></span>
-		        		    	<span class="title">App-news</span>
-		        		    </span>
-		        		  </a>
-		      		  </li>
-		            <!-- 4 -->
-		      		  <li class="col-md-4 col-sm-4 col-xs-12 mix  portraits all" data-cat="nature">
-		              <a href="#" data-toggle="modal" class="mix-cover" target="_blank">
-		                <img class="horizontal"  src="img/作品图片/blog.jpg" alt="placeholder">
-		        		    <span class="overlay">
-		        		    	<span class="valign"></span>
-		        		    	<span class="title">Sys-blogs </span>
-		        		    </span>
-		        		  </a>
-		      		  </li>
-		            <!-- 5 -->
-					  		<li class="col-md-4 col-sm-4 col-xs-12 mix portraits all" data-cat="nature">
-		            	<a href="http://fangtongtong.duapp.com/install_package/index.php" data-toggle="modal"  class="mix-cover" target="_blank">
-		                <img class="horizontal" src="img/作品图片/chewang.jpg" alt="placeholder">
-		        		      <span class="overlay">
-		        		      	<span class="valign"></span>
-		        		      	<span class="title">Sys-车网</span>
-		        		      </span>
-		        		    </a>
-		      		  </li>
-		             <!-- 6 -->
-					      <li class="col-md-4 col-sm-4 col-xs-12 mix portraits all" data-cat="nature">
-		              <a href="http://fangtongtong.duapp.com/jiaju/index.php" data-toggle="modal" class="mix-cover" target="_blank">
-		                <img class="horizontal" src="img/作品图片/jjb.jpg" alt="placeholder" style="width:400px;height:300px">
-		        		    	<span class="overlay">
-		        		    		<span class="valign"></span>
-		        		    		<span class="title">Sys-家居帮</span>
-		        		    	</span>
-		        		     </a>
-		      		  </li>
-		            <!-- 7-->
-		      		  <li class="col-md-4 col-sm-4 col-xs-12 mix bw all" data-cat="graphics">
-		              <a href="https://fangtongtong.github.io/3d-house/" data-toggle="modal"  class="mix-cover green" target="_blank">
-		                <img class="vertical" src="img/作品图片/house.jpg" alt="portrait 4" style="width:400px;height: 300px;">
-		                <span class="overlay">
-		                  <span class="valign"></span>
-		                 	<span class="title">DS-3D-house</span>
-		                </span>           
-		        		  </a>
-		      		  </li>
-		            	<!-- 8 -->
-					 			<li class="col-md-4 col-sm-4 col-xs-12 mix bw all" data-cat="portrait">
-		              <a href="https://fangtongtong.github.io/fullpage/" data-toggle="modal" class="mix-cover green" target="_blank">
-		                <img class="vertical" src="img/作品图片/fullpage.jpg" alt="Forest">
-		                  <span class="overlay">
-		                    <span class="valign"></span>
-		                    <span class="title">DS-fullpage</span>
-		                  </span>                    
-		        		  </a>
-		      		  </li>
-		            <!-- 9 -->
-					  		<li class="col-md-4 col-sm-4 col-xs-12 mix bw all" data-cat="bw">
-		              <a href="https://fangtongtong.github.io/canvas/" data-toggle="modal" class="mix-cover green" target="_blank">
-		                <img class="vertical" src="img/作品图片/canvas.jpg" alt="Black and White">
-		                <span class="overlay">
-		                  <span class="valign"></span>
-		                  <span class="title">DS-canvas</span>
-		                </span>                  
-		        		  </a>
-		      		  </li>
-		
-		          <!-- 10 -->
-		
-		            <li class="col-md-4 col-sm-4 col-xs-12 mix bw all" data-cat="bw">
-		              <a href="https://fangtongtong.github.io/game/" data-toggle="modal" class="mix-cover green" target="_blank">
-		                <img class="vertical" src="img/作品图片/game.jpg"  alt="Black and White">
-		                <span class="overlay">
-		                	<span class="valign"></span>
-		                	<span class="title">DS-game</span>
-		                </span>                  
-		              </a>
-		            </li>
-		            <!-- 11 -->
-		           <!--  <li class="col-md-4 col-sm-4 col-xs-12 mix bw all" data-cat="nature">
-		              <a href="https://kmmyzi.github.io/ps" data-toggle="modal" class="mix-cover">
-		                <img class="horizontal" src="img/作品图片/ps.png"  alt="placeholder">
-		                <span class="overlay">
-		                	<span class="valign"></span>
-		                	<span class="title">DS-apple</span>
-		                </span>
-		              </a>
-		            </li> -->
-		            <!-- 12 -->
-		           <!--  <li class="col-md-4 col-sm-4 col-xs-12 mix bw all" data-cat="bw">
-		              <a href="https://alisa-hui.github.io/iphone" data-toggle="modal"  class="mix-cover green">
-		                <img class="vertical"  src="img/作品图片/apple.png" alt="Black and White">
-		                <span class="overlay">
-		                	<span class="valign"></span>
-		                	<span class="title">DS-Apple</span>
-		                </span>                  
-		              </a>
-		            </li> -->
-		             <!-- 13  -->
-		            <!--<li class="col-md-4 col-sm-4 col-xs-12 mix portraits all" data-cat="graphics">
-		              <a href="https://alisa-hui.github.io/music" data-toggle="modal" class="mix-cover green">
-		                <img class="vertical" src="img/作品图片/yy.png" alt="portrait 4">
-		                <span class="overlay">
-		                	<span class="valign"></span>
-		                	<span class="title">Other-music</span>
-		                </span>           
-		              </a>
-		            </li> -->
-		            <!-- 14 -->
-		            <!--<li class="col-md-4 col-sm-4 col-xs-12 mix UIS all" data-cat="graphics">
-		              <a href="/game" data-toggle="modal" class="mix-cover green">
-		                <img class="vertical" src="img/作品图片/game.png" alt="portrait 4">
-		                <span class="overlay">
-		                	<span class="valign"></span>
-		                	<span class="title">UI-GAME</span>
-		                </span>           
-		              </a>
-		            </li>-->
-		            <!-- 15  -->
-		           <!-- <li class="col-md-4 col-sm-4 col-xs-12 mix portraits all" data-cat="graphics">
-		              <a href="http://localhost/" data-toggle="modal" class="mix-cover green">
-		                <img class="vertical" src="img/作品图片/aimaiti.png" alt="portrait 4">
-		                <span class="overlay">
-		                	<span class="valign"></span>
-		                	<span class="title">Other-amaiti</span>
-		                </span>           
-		              </a>
-		            </li>-->
-		            <!--16-->
-		            <!--<li class="col-md-4 col-sm-4 col-xs-12 mix UIS all" data-cat="graphics">
-		              <a href="/App" data-toggle="modal" class="mix-cover green">
-		                <img class="vertical" src="img/作品图片/app.png" alt="portrait 4">
-		                <span class="overlay">
-		                	<span class="valign"></span>
-		                	<span class="title">UI-App</span>
-		                </span>           
-		              </a>
-		            </li>-->
-		            <!--17-->
-		            <!--<li class="col-md-4 col-sm-4 col-xs-12 mix portraits all" data-cat="graphics">
-		              <a href="/wanhuatong" data-toggle="modal" class="mix-cover green">
-		                <img class="vertical"  src="img/作品图片/wanhuatong.png" alt="portrait 4">
-		                <span class="overlay">
-		                	<span class="valign"></span>
-		                	<span class="title">Other-kaleidoscope</span>
-		                </span>           
-		              </a>
-		            </li>-->
-		    		  </ul>   			  
-		<!-- Load Photo in Modal -->			  
-		   				<div class="modal fade" id="portrait1" tabindex="-1" role="dialog" aria-hidden="true">
-		  					<div class="modal-dialog">
-		    					<div class="modal-content">
-		      					<div class="modal-header">
-		        					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        					<h4 class="modal-title text-center">Portrait 1</h4>
-		      					</div>
-		      					<div class="modal-body">
-		       						<img class="thumbnail" alt="Portrait1" src="img/portrait1.jpg"/>
-		      					</div>
-		    					</div><!-- /.modal-content -->
-		  					</div><!-- /.modal-dialog -->
-							</div><!-- /.modal -->
-		  				<div class="modal fade" id="portrait2" tabindex="-1" role="dialog"  aria-hidden="true">
-		  					<div class="modal-dialog">
-		    					<div class="modal-content">
-		      					<div class="modal-header">
-		        					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        					<h4 class="modal-title text-center">Portrait 2</h4>
-		      					</div>
-		      					<div class="modal-body">
-		       						<img class="thumbnail" alt="Portrait1" src="img/portrait2.jpg"/>
-		      					</div>
-		    					</div><!-- /.modal-content -->
-		  					</div><!-- /.modal-dialog -->
-							</div><!-- /.modal -->
-		
-							<div class="modal fade" id="portrait3" tabindex="-1" role="dialog" aria-hidden="true">
-		  				<div class="modal-dialog">
-		    				<div class="modal-content">
-		      				<div class="modal-header">
-		        				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        				<h4 class="modal-title text-center">Portrait 3</h4>
-		      				</div>
-		      			<div class="modal-body">
-		       				<img class="thumbnail" alt="Portrait1" src="img/portrait3.jpg"/>
-		      			</div>
-		    			</div><!-- /.modal-content -->
-		  			</div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
-		
-					<div class="modal fade" id="portrait4" tabindex="-1" role="dialog"  aria-hidden="true">
-		  			<div class="modal-dialog">
-		    			<div class="modal-content">
-		      			<div class="modal-header">
-		        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        			<h4 class="modal-title text-center">Portrait 4</h4>
-		      			</div>
-		      			<div class="modal-body">
-		       				<img class="thumbnail" alt="Portrait1" src="img/portrait4.jpg"/>
-		      			</div>
-		    			</div><!-- /.modal-content -->
-		  			</div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
-		
-					<div class="modal fade" id="portrait5" tabindex="-1" role="dialog"  aria-hidden="true">
-		  			<div class="modal-dialog">
-		    			<div class="modal-content">
-		      			<div class="modal-header">
-		        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        			<h4 class="modal-title text-center">Portrait 5</h4>
-		      			</div>
-		      			<div class="modal-body">
-		       				<img class="thumbnail" alt="Portrait1" src="img/portrait5.jpg"/>
-		      			</div>
-		    			</div><!-- /.modal-content -->
-		  			</div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
-		
-					<div class="modal fade" id="nature" tabindex="-1" role="dialog"  aria-hidden="true">
-		  			<div class="modal-dialog">
-		    			<div class="modal-content">
-		      			<div class="modal-header">
-		        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        			<h4 class="modal-title text-center">Nature</h4>
-		      			</div>
-		      			<div class="modal-body">
-		       			<img class="thumbnail" alt="nature" src="img/nature.jpg"/>
-		      			</div>
-		    			</div><!-- /.modal-content -->
-		  			</div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
-		
-					<div class="modal fade" id="nature1" tabindex="-1" role="dialog" aria-hidden="true">
-		  			<div class="modal-dialog">
-		    			<div class="modal-content">
-		      			<div class="modal-header">
-		        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        			<h4 class="modal-title text-center">Nature 1</h4>
-		      			</div>
-		      			<div class="modal-body">
-		       				<img class="thumbnail" alt="nature" src="img/nature1.jpg"/>
-		      			</div>
-		    			</div><!-- /.modal-content -->
-		  			</div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
-		
-		
-					<div class="modal fade" id="forest" tabindex="-1" role="dialog" aria-hidden="true">
-		  			<div class="modal-dialog">
-		    			<div class="modal-content">
-		      			<div class="modal-header">
-		        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        			<h4 class="modal-title text-center">Forest</h4>
-		      			</div>
-		      			<div class="modal-body">
-		       				<img class="thumbnail" alt="forest" src="img/forest.jpg"/>
-		      			</div>
-		    			</div><!-- /.modal-content -->
-		  			</div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
-		
-					<div class="modal fade" id="bw1" tabindex="-1" role="dialog" aria-hidden="true">
-		  			<div class="modal-dialog">
-		   	 			<div class="modal-content">
-		      			<div class="modal-header">
-		        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        			<h4 class="modal-title text-center">Black and White</h4>
-		      			</div>
-		      		<div class="modal-body">
-		       			<img class="thumbnail" alt="forest" src="img/bw1.jpg"/>
-		      		</div>
-		    		</div><!-- /.modal-content -->
-		  		</div><!-- /.modal-dialog -->
-				</div><!-- /.modal -->
-		<!-- /Load Photo in Modal -->	
-					</div>	
-				</div>
-			</div>
-		</div>
-    <!-- /Portfolio -->
-    <!-- Contact -->
-    <div id="contact">
-      <div class="container text-center">
-        <div class="row">
-		<div class="col-md-4 col-md-offset-4 text-center">
-            <h2>Contact Me</h2>
-			<hr>
-          </div>
-          <div class="col-md-5 col-md-offset-3">
-		  <!-- contact form starts -->
-            <form action="contact" id="contact-form" class="form-horizontal">
-			<fieldset>
-						    <div class="form-group">
-						      <label class="col-sm-4 control-label" for="name">姓名</label>
-						      <div class="col-sm-8"><span>房童童</span>
-				 <!--<input type="text"  placeholder="Your Name" class="form-control" name="name" id="name">-->
-						      </div>
-						    </div>
-                <div class="form-group">
-                  <label class="col-sm-4 control-label" for="message">电话</label>
-                  <div class="col-sm-8"><span>18235101315</span>
-  <!--<textarea placeholder="Please Type Your Message" class="form-control" name="message" id="message" rows="3"></textarea>-->
-                  </div>
+</div>
+<div class="left">
+    <h1>Don't try so hard, the best things come when you least expect them to.</h1>
+    <h2>不要着急，最好的总会在最不经意的时候出现。</h2>
+    <div class="header_con">
+        <div class="header">
+            <div class="logo" style="">
+
+            </div>
+            <div class="toggle_left">
+            </div>
+        </div>
+    </div>
+    <div class="main_left container" >
+
+        <h3><span>About Me</span></h3>
+        <div class="me row">
+            <div class="me-img col-s-12 col-m-6 col-l-6" style="float:left;transition:all 2s ease-in-out;overflow: hidden;">
+                <img src="img/me.jpg" alt="" width="100%" height="100%">
+            </div>
+            <div class="me-word col-s-12 col-m-6 col-l-6" style="float:left;padding-left:15px;font-size:20px;overflow: auto">
+                <p class="me-wordp">座右铭：梦想不会逃跑，<p style="text-align: right;padding:0;margin:0;font-weight:bold;font-size:25px">逃跑的只会是自己！</p></p>
+                <p style="overflow: hidden;padding-top:15px;text-indent: 2em">百分之一百二的工作热情，一丝不苟的工作态度，是我对自我的工作要求。编程是我的爱好，他让我拥有缜密的逻辑思维能力，编写优雅高效的代码是我的追求与本分。较强的责任心，强大的抗压能力，是我对自己的评价。我精通html5、css3、javascript、jquery、agularjs，熟练掌握Photoshop、AI等作图工具，有一定的设计和美术基础，并熟练应用PHP、node.js、sql语句。</p>
+            </div>
+        </div>
+        <h3><span>My Skill</span></h3>
+        <ul class="skill_list row">
+            <li class="skill_item col-s-6 col-m-4 col-l-3">
+                <div class="items"><img src="img/js.jpg" alt=""></div>
+                <span>javascript</span>
+            </li>
+            <li class="skill_item col-s-6 col-m-4 col-l-3">
+                <div class="items"><img src="img/css3.jpg" alt=""></div>
+                <span>CSS3</span>
+            </li>
+            <li class="skill_item col-s-6 col-m-4 col-l-3">
+                <div class="items"><img src="img/h5.jpg" alt=""></div>
+                <span>HTML5</span>
+            </li>
+            <li class="skill_item col-s-6 col-m-4 col-l-3">
+                <div class="items"><img src="img/node1.jpg" alt=""></div>
+                <span>NodeJs</span>
+            </li>
+            <li class="skill_item col-s-6 col-m-4 col-l-3">
+                <div class="items"><img src="img/jquery.jpg" alt=""></div>
+                <span>jQuery</span>
+            </li>
+            <li class="skill_item col-s-6 col-m-4 col-l-3">
+                <div class="items"><img src="img/ps1.jpg" alt=""></div>
+                <span>Photoshop</span>
+            </li>
+            <li class="skill_item col-s-6 col-m-4 col-l-3">
+                <div class="items"><img src="img/agular1.jpg" alt=""></div>
+                <span>AgularJs</span>
+            </li>
+            <li class="skill_item col-s-6 col-m-4 col-l-3">
+                <div class="items"><img src="img/react.jpg" alt=""></div>
+                <span>ReactJs</span>
+            </li>
+            <li class="skill_item col-m-4 item-hide">
+                <div class="items"><img src="img/react.jpg" alt=""></div>
+                <span>ReactJs</span>
+            </li>
+        </ul>
+        <h3><span>Recent Work</span></h3>
+        <ul class="work_list row">
+            <li class="work_item col-s-12 col-m-6 col-l-4">
+                <div class="work_items">
+                    <div class="work_cover">
+                        <span><img src="img/web.jpg" alt=""></span>
+                    </div>
                 </div>
-						    <div class="form-group">
-						      <label class="col-sm-4 control-label" for="email">邮箱</label>
-						      <div class="col-sm-8"><span>fangtongtong1994@163.com</span>
-	 <!--<input type="text" placeholder="Enter Your Email Address" class="form-control" name="email" id="email">-->
-						      </div>
-						    </div>
-						    <div class="form-group">
-						      <label class="col-sm-4 control-label" for="subject">岗位</label>
-						      <div class="col-sm-8"><span>前端工程师</span>
-				  <!--<input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">-->
-						      </div>
-						    </div>						    	              
-						</fieldset>
-						</form>
-				
-				<!-- contact form ends -->		
-          </div>
-        </div>
-      </div>
+                <span class="introduce">企业网站作品</span>
+            </li>
+            <li class="work_item col-s-12 col-m-6 col-l-4">
+                <div class="work_items">
+                    <div class="work_cover">
+                        <span><img src="img/h5css3.jpg" alt=""></span>
+                    </div>
+                </div>
+                <span class="introduce">Html5&Css3</span>
+            </li>
+            <li class="work_item col-s-12 col-m-6 col-l-4">
+                <div class="work_items">
+                    <div class="work_cover">
+                        <span><img src="img/app.jpg" alt=""></span>
+                    </div>
+                </div>
+                <span class="introduce">App作品</span>
+            </li>
+            <li class="work_item col-s-12 col-m-6 col-l-4">
+                <div class="work_items">
+                    <div class="work_cover">
+                        <span><img src="img/game.jpg" alt=""></span>
+                    </div>
+                </div>
+                <span class="introduce">游戏</span>
+            </li>
+            <li class="work_item col-s-12 col-m-6 col-l-4">
+                <div class="work_items">
+                    <div class="work_cover">
+                        <span><img src="img/xiangying.jpg" alt=""></span>
+                    </div>
+                </div>
+                <span class="introduce">响应式</span>
+            </li>
+            <li class="work_item col-s-12 col-m-6 col-l-4">
+                <div class="work_items">
+                    <div class="work_cover">
+                        <span><img src="img/little.jpg" alt=""></span>
+                    </div>
+                </div>
+                <span class="introduce">Small Routine</span>
+            </li>
+        </ul>
     </div>
-     <!--/Contact 
-     Footer -->
-     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-           <h2>Thank You</h2>
-           <em>All copyright belongs to the individual</em>
-          </div>
+    <h3><span>Contact Me</span></h3>
+    <div class="contact" style="width:100%;height:200px;background:rgba(0,0,0,0.8);color:#fff">
+        <p>qq:494157123</p>
+        <p>邮箱:gpfguanpengfei@163.com</p>
+    </div>
+    <div class="back-top"></div>
+</div>
+<div class="big_cover">
+    <div class="work_fix">
+        <div class="work_mast">
+            <i class="work_i">X</i>
+            <div><a href="http://svn1205.duapp.com/mycms/index.php" target="_blank">北京车网互联科技有限公司</a></div>
+            <div><a href="http://zakersvn.duapp.com/mycms/index.php" target="_blank">ZAKER官网</a></div>
+            <div><a href="http://www.zonda.com/ch/index.asp" target="_blank">中大集团官方网站</a></div>
+            <!--<div><a href="" target="_blank">个人博客</a></div>-->
         </div>
-      </div>
-    </footer> 
-     <!--/Footer 
-     Bootstrap core JavaScript
-     Placed at the end of the document so the pages load faster-->
-  <script src="js/jquery.js"></script>
-	<script src="js/jquery-scrolltofixed-min.js"></script>
-	<script src="js/jquery.vegas.js"></script>
-	<script src="js/jquery.mixitup.min.js"></script>
-	<script src="js/jquery.validate.min.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/bootstrap.js"></script>
-	
-<!-- Slideshow Background  -->
-	<script>
-	//banner淡入淡出效果
-$.vegas('slideshow', {
-  delay:5000,
-  backgrounds:[
-    { src:'./img/slide4.jpg', fade:2000 },
-	 	{ src:'./img/slide_2.jpg', fade:2000 },
-    { src:'./img/portrait1.jpg', fade:2000 },
-	 	{ src:'./img/slide1.jpg', fade:2000 },
-    { src:'./img/portrait2.jpg', fade:2000 },
-    { src:'./img/portrait3.jpg', fade:2000 },
-	 	{ src:'./img/portrait4.jpg', fade:2000 },
-	  { src:'./img/forest.jpg', fade:2000 }
- ]
-  //背景网格图形
-})('overlay', {
-src:'./img/overlay.png'
-});
-
-	</script>
-<!-- /Slideshow Background -->
-
-<!-- Mixitup : Grid -->
-    <script>
-		$(function(){
-    $('#Grid').mixitup();
-      });
-    </script>
-<!-- /Mixitup : Grid -->	
-
-    <!-- 楼层跳转滑动效果 -->
-    <script>
-      $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-            || location.hostname == this.hostname) {
-    
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
-      });
-    </script>/
-<!-- 导航定位 -->
-<script type="text/javascript">
-$(document).ready(function() {
-        $('#nav').scrollToFixed();
-  });
-    </script>
-<!-- /导航定位-->
-	
-  </body>
-
+    </div>
+</div>
+<div class="big_cover">
+    <div class="work_fix">
+        <div class="work_mast">
+            <i class="work_i">X</i>
+            <div><a href="https://guangpf.github.io/mycanvas/canvas1.html" target="_blank">canvas 画板</a></div>
+            <div><a href="https://guangpf.github.io/3D/room/index" target="_blank">3D room</a></div>
+            <div><a href="https://guangpf.github.io/3D/lunbo/index" target="_blank">3D 纵向轮播图</a></div>
+            <div><a href="https://guangpf.github.io/3D/horizontallunbo/index" target="_blank">3D horizontal</a></div>
+            <div><a href="https://guangpf.github.io/3D/global/circle" target="_blank">地球仪</a></div>
+        </div>
+    </div>
+</div>
+<div class="big_cover">
+    <div class="work_fix">
+        <div class="work_mast">
+            <i class="work_i">X</i>
+            <div><a href="http://guan12.duapp.com/" target="_blank">新闻app</a></div>
+            <div><a href="http://fttworkapp.duapp.com" target="_blank">WorkApp</a></div>
+        </div>
+    </div>
+</div>
+<div class="big_cover">
+    <div class="work_fix">
+        <div class="work_mast">
+            <i class="work_i">X</i>
+            <div><a href="https://guangpf.github.io/rungame/runGame/run.html" target="_blank">跑酷小游戏</a></div>
+        </div>
+    </div>
+</div>
+<div class="big_cover">
+    <div class="work_fix">
+        <div class="work_mast">
+            <i class="work_i">X</i>
+            <div><a href="https://guangpf.github.io/guan/" target="_blank">苹果官网</a></div>
+            <div><a href="https://guangpf.github.io/touch/baidu/baidu.html" target="_blank">百度舆情</a></div>
+        </div>
+    </div>
+</div>
+<div class="big_cover">
+    <div class="work_fix">
+        <div class="work_mast">
+            <i class="work_i">X</i>
+            <div><a href="https://guangpf.github.io/3D/global/circle" target="_blank">地球仪</a></div>
+            <div><a href="https://guangpf.github.io/3D/lunbo/qingming" target="_blank">清明上河图</a></div>
+            <div><a href="https://guangpf.github.io/3D/rain" target="_blank">雨滴</a></div>
+            <div><a href="https://guangpf.github.io/3D/duola" target="_blank">哆啦A梦</a></div>
+            <div><a href="https://guangpf.github.io/3D/2DWatch" target="_blank">2D盘</a></div>
+            <div><a href="https://guangpf.github.io/3D/dragbox" target="_blank">3D盒子拖拽</a></div>
+            <div><a href="https://guangpf.github.io/3D/ball/ball" target="_blank">Ball</a></div>
+            <div><a href="https://guangpf.github.io/guanpengfei/drag/drag.html" target="_blank">拖拽轮播</a></div>
+        </div>
+    </div>
+</div>
+</body>
 </html>
